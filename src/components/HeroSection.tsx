@@ -20,9 +20,9 @@ const HeroSection = () => {
             <h1 className="font-serif text-5xl lg:text-7xl font-medium text-foreground leading-tight">
               Roshni
               <br />
-              <span className="text-primary font-light">Sewlani</span>
+              <span className="text-primary font-light">Sewlani's</span>
               <br />
-              Gallery
+              Extravaganza
             </h1>
             
             <p className="text-xl text-muted-foreground font-light max-w-lg leading-relaxed">
