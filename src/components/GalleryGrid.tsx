@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import ArtworkCard from './ArtworkCard';
 import coffeeFace from '@/assets/coffee-face-painting.jpg';
 import femaleGaze from '@/assets/female-gaze-drawing.jpg';
+import blueEyes from '@/assets/blue-eyes-portrait.jpg';
+import traditionalBeauty from '@/assets/traditional-beauty.jpg';
+import naturePortrait from '@/assets/nature-portrait.jpg';
+import mixedMediaEye from '@/assets/mixed-media-eye.jpg';
 
 const artworks = [
   {
@@ -9,7 +13,6 @@ const artworks = [
     image: coffeeFace,
     title: 'Coffee Face Painting',
     artist: 'Roshni Sewlani',
-    year: '2024',
     description: 'An expressive portrait capturing the essence of human emotion through masterful ink work and thoughtful composition.',
     price: 'SOLD'
   },
@@ -18,8 +21,39 @@ const artworks = [
     image: femaleGaze,
     title: 'Female Gaze Drawing',
     artist: 'Roshni Sewlani',
-    year: '2024', 
     description: 'A captivating exploration of feminine perspective rendered in colored pencil with intricate detail and emotional depth.',
+    price: 'SOLD'
+  },
+  {
+    id: '3',
+    image: blueEyes,
+    title: 'Azure Dreams',
+    artist: 'Roshni Sewlani',
+    description: 'Striking blue eyes pierce through this realistic portrait, where soft skin tones meet bold red lips. A masterful study in human emotion and vulnerability. The delicate rendering showcases technical precision with heartfelt artistic expression.',
+    price: 'SOLD'
+  },
+  {
+    id: '4',
+    image: traditionalBeauty,
+    title: 'Golden Heritage',
+    artist: 'Roshni Sewlani',
+    description: 'Traditional Indian beauty adorned with intricate jewelry and ceremonial ornaments against golden backdrop. Rich cultural symbolism meets contemporary artistic technique in this stunning celebration of heritage. Every detail tells a story of tradition and grace.',
+    price: 'SOLD'
+  },
+  {
+    id: '5',
+    image: naturePortrait,
+    title: 'Emerald Reverie',
+    artist: 'Roshni Sewlani',
+    description: 'A serene portrait set against lush green foliage, capturing natural beauty in harmony with nature. The subject\'s contemplative gaze and soft features blend seamlessly with the organic background. A perfect fusion of human grace and natural elements.',
+    price: 'SOLD'
+  },
+  {
+    id: '6',
+    image: mixedMediaEye,
+    title: 'Monochrome Metamorphosis',
+    artist: 'Roshni Sewlani',
+    description: 'A striking mixed-media piece where black and white realism meets vibrant color in a single eye. The contrast between detailed pencil work and bold painted elements creates visual drama. An innovative exploration of artistic duality and transformation.',
     price: 'SOLD'
   }
 ];
@@ -41,7 +75,7 @@ const GalleryGrid = () => {
   }, []);
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section id="gallery" className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}

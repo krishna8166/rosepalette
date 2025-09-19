@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import heroArtwork from '@/assets/coffee-face-painting.jpg';
+import heroArtwork from '@/assets/traditional-beauty.jpg';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,7 +22,7 @@ const HeroSection = () => {
               <br />
               <span className="text-primary font-light">Sewlani's</span>
               <br />
-              Extravaganza
+              Atelier
             </h1>
             
             <p className="text-xl text-muted-foreground font-light max-w-lg leading-relaxed">
@@ -36,6 +36,12 @@ const HeroSection = () => {
               variant="default" 
               size="lg"
               className="px-8 py-6 text-lg font-medium rounded-2xl hover:shadow-lg transition-all duration-500"
+              onClick={() => {
+                document.getElementById('gallery')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
             >
               Explore Collection
             </Button>
@@ -54,19 +60,19 @@ const HeroSection = () => {
           <div className="gallery-card-featured rounded-3xl overflow-hidden bg-card animate-gentle-float">
             <img 
               src={heroArtwork}
-              alt="Coffee Face Painting by Roshni Sewlani"
+              alt="Golden Heritage by Roshni Sewlani"
               className="w-full h-auto object-cover"
             />
             <div className="p-8">
               <h3 className="font-serif text-2xl font-medium text-card-foreground mb-2">
-                Coffee Face Painting
+                Golden Heritage
               </h3>
               <p className="text-muted-foreground font-light">
-                Ink on Canvas • 20.3 x 25.4 cm
+                Mixed Media • 35.6 x 45.7 cm
               </p>
               <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-                An expressive portrait capturing the essence of human emotion through 
-                masterful ink work and thoughtful composition.
+                Traditional Indian beauty adorned with intricate jewelry and ceremonial 
+                ornaments against golden backdrop celebrating heritage and grace.
               </p>
             </div>
           </div>

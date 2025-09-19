@@ -5,12 +5,11 @@ interface ArtworkCardProps {
   image: string;
   title: string;
   artist: string;
-  year: string;
   description: string;
   price?: string;
 }
 
-const ArtworkCard = ({ image, title, artist, year, description, price }: ArtworkCardProps) => {
+const ArtworkCard = ({ image, title, artist, description, price }: ArtworkCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -34,7 +33,7 @@ const ArtworkCard = ({ image, title, artist, year, description, price }: Artwork
             {title}
           </h3>
           <p className="text-muted-foreground font-light">
-            {artist} • {year}
+            {artist}
           </p>
         </div>
         
